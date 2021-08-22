@@ -1,7 +1,9 @@
 import ticketListReducer from '../../reducers/ticket-list-reducer';
 
 describe('ticketListReducer', () => {
-
+  
+  let action;
+  
   const currentState = {
     1: {names: 'Ryan & Aimen',
     location: '4b',
@@ -13,7 +15,6 @@ describe('ticketListReducer', () => {
     id: 2 }
   }
 
-  let action;
   const ticketData = {
     names: 'Ryan & Aimen',
     location: '4b',
